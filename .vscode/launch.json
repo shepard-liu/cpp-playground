@@ -1,0 +1,56 @@
+{
+  "configurations": [
+    {
+      "name": "Launch main(Debug, Windows)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/build/Debug/main.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "environment": [],
+      "console": "externalTerminal",
+      "preLaunchTask": "build(debug)"
+    },
+    {
+      "name": "Launch main(Release, Windows)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/build/Release/main.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "environment": [],
+      "console": "externalTerminal",
+      "preLaunchTask": "build(release)"
+    },
+    {
+      "name": "Launch main(Debug, macOS)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/build/main",
+      "osx": {
+        "args": [],
+        "MIMode": "lldb"
+      },
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "environment": [],
+      "preLaunchTask": "build(debug)"
+    },
+    {
+      "name": "Launch main(Release, macOS)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/build/main",
+      "osx": {
+        "args": [],
+        "MIMode": "lldb"
+      },
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "environment": [],
+      "preLaunchTask": "build(release)"
+    }
+  ]
+}
